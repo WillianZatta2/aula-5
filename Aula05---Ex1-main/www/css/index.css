@@ -1,0 +1,79 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    display: flex;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(to bottom, #A7A7A7 0%, #E4E4E4 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    justify-content:center ;
+    align-items: center;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    text-transform:uppercase;
+    width:100%;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+
+.app {
+    position: relative;
+    display: flex;
+    width: 40rem;
+    background-color: #f6f6f6;
+    height: 90vh;
+    overflow-y: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.card {
+   
+    display: flex ;
+    list-style-type: none;
+    flex-direction: column;
+    width: 100%;
+    min-height: 33%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    color: rgb(63, 63, 63);
+}
+
+.img{
+    height: 100px;
+    width:100px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.top{
+    position: absolute;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: aquamarine;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
